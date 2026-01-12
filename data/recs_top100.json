@@ -1,0 +1,1751 @@
+[
+  {
+    "movieId": 296,
+    "tmdbId": 680,
+    "score": 0.150892,
+    "title": "Pulp Fiction",
+    "poster_url": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/96hiUXEuYsu4tcnvlaY8tEMFM0m.jpg",
+    "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "runtime": 154,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 593,
+    "tmdbId": 274,
+    "score": 0.140016,
+    "title": "The Silence of the Lambs",
+    "poster_url": "https://image.tmdb.org/t/p/w342/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/aYcnDyLMnpKce1FOYUpZrXtgUye.jpg",
+    "overview": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "runtime": 119,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 50,
+    "tmdbId": 629,
+    "score": 0.135274,
+    "title": "The Usual Suspects",
+    "poster_url": "https://image.tmdb.org/t/p/w342/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/hy0Hx9fMPk2fmw26Li60z1S2giU.jpg",
+    "overview": "Held in an L.A. interrogation room, Verbal Kint attempts to convince the feds that a mythic crime lord, Keyser Soze, not only exists, but was also responsible for drawing him and his four partners into a multi-million dollar heist that ended with an explosion in San Pedro harbor – leaving few survivors. Verbal lures his interrogators with an incredible story of the crime lord's almost supernatural prowess.",
+    "year": 1995,
+    "director": "Bryan Singer",
+    "runtime": 106,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 904,
+    "tmdbId": 567,
+    "score": 0.120555,
+    "title": "Rear Window",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/zGs5tZOlvc9cprdcU6kDOVNpujf.jpg",
+    "overview": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "year": 1954,
+    "director": "Alfred Hitchcock",
+    "runtime": 112,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ]
+  },
+  {
+    "movieId": 150,
+    "tmdbId": 568,
+    "score": 0.119965,
+    "title": "Apollo 13",
+    "poster_url": "https://image.tmdb.org/t/p/w342/tVeKscCm2fY1xDXZk8PgnZ87h9S.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/n0FDJI9c0uWiZwm8wgXVjaMBn96.jpg",
+    "overview": "The true story of technical troubles that scuttle the Apollo 13 lunar mission in 1970, risking the lives of astronaut Jim Lovell and his crew, with the failed journey turning into a thrilling saga of heroism. Drifting more than 200,000 miles from Earth, the astronauts work furiously with the ground crew to avert tragedy.",
+    "year": 1995,
+    "director": "Ron Howard",
+    "runtime": 140,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "History"
+    ]
+  },
+  {
+    "movieId": 480,
+    "tmdbId": 329,
+    "score": 0.101875,
+    "title": "Jurassic Park",
+    "poster_url": "https://image.tmdb.org/t/p/w342/bRKmwU9eXZI5dKT11Zx1KsayiLW.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/jzt9HuhIAdH9qp0K2MA1m5V8sgq.jpg",
+    "overview": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "runtime": 127,
+    "original_language": "en",
+    "genres": [
+      "Adventure",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 912,
+    "tmdbId": 289,
+    "score": 0.096432,
+    "title": "Casablanca",
+    "poster_url": "https://image.tmdb.org/t/p/w342/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/87wqeMeUeMRLjsE1IWNKJcPlpuC.jpg",
+    "overview": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+    "year": 1943,
+    "director": "Michael Curtiz",
+    "runtime": 103,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 1193,
+    "tmdbId": 510,
+    "score": 0.094972,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "poster_url": "https://image.tmdb.org/t/p/w342/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/6Oa3zTiluBz2W8D2ou1MY16dUiF.jpg",
+    "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+    "year": 1975,
+    "director": "Miloš Forman",
+    "runtime": 133,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 923,
+    "tmdbId": 15,
+    "score": 0.087313,
+    "title": "Citizen Kane",
+    "poster_url": "https://image.tmdb.org/t/p/w342/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/9Y85oA1y6toL2OACXdaC6iTl7eQ.jpg",
+    "overview": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
+    "year": 1941,
+    "director": "Orson Welles",
+    "runtime": 119,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 903,
+    "tmdbId": 426,
+    "score": 0.087049,
+    "title": "Vertigo",
+    "poster_url": "https://image.tmdb.org/t/p/w342/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/rtVwkTqllcmyY4TVOycgVBHppWf.jpg",
+    "overview": "A retired San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
+    "year": 1958,
+    "director": "Alfred Hitchcock",
+    "runtime": 128,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 58559,
+    "tmdbId": 155,
+    "score": 0.085997,
+    "title": "The Dark Knight",
+    "poster_url": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "runtime": 152,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Action",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1,
+    "tmdbId": 862,
+    "score": 0.082034,
+    "title": "Toy Story",
+    "poster_url": "https://image.tmdb.org/t/p/w342/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+    "overview": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+    "year": 1995,
+    "director": "John Lasseter",
+    "runtime": 81,
+    "original_language": "en",
+    "genres": [
+      "Family",
+      "Comedy",
+      "Animation",
+      "Adventure"
+    ]
+  },
+  {
+    "movieId": 590,
+    "tmdbId": 581,
+    "score": 0.078115,
+    "title": "Dances with Wolves",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ywWva4trKw7f3wtbz81Fe3FnrtC.jpg",
+    "overview": "Wounded Civil War soldier John Dunbar tries to commit suicide—and becomes a hero instead. As a reward, he's assigned to his dream post, a remote junction on the Western frontier, and soon makes unlikely friends with the local Sioux tribe.",
+    "year": 1990,
+    "director": "Kevin Costner",
+    "runtime": 181,
+    "original_language": "en",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Western"
+    ]
+  },
+  {
+    "movieId": 589,
+    "tmdbId": 280,
+    "score": 0.077976,
+    "title": "Terminator 2: Judgment Day",
+    "poster_url": "https://image.tmdb.org/t/p/w342/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ztBeLd2UCbUATJ1cXwwHev3G3xX.jpg",
+    "overview": "Ten years after the events of the original, a reprogrammed T-800 is sent back in time to protect young John Connor from the shape-shifting T-1000. Together with his mother Sarah, he fights to stop Skynet from triggering a nuclear apocalypse.",
+    "year": 1991,
+    "director": "James Cameron",
+    "runtime": 137,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 1203,
+    "tmdbId": 389,
+    "score": 0.077908,
+    "title": "12 Angry Men",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/w4bTBXcqXc2TUyS5Fc4h67uWbPn.jpg",
+    "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+    "year": 1957,
+    "director": "Sidney Lumet",
+    "runtime": 97,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1265,
+    "tmdbId": 137,
+    "score": 0.077624,
+    "title": "Groundhog Day",
+    "poster_url": "https://image.tmdb.org/t/p/w342/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
+    "overview": "A narcissistic TV weatherman, along with his attractive-but-distant producer, and his mawkish cameraman, is sent to report on Groundhog Day in the small town of Punxsutawney, where he finds himself repeating the same day over and over.",
+    "year": 1993,
+    "director": "Harold Ramis",
+    "runtime": 101,
+    "original_language": "en",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 858,
+    "tmdbId": 238,
+    "score": 0.073186,
+    "title": "The Godfather",
+    "poster_url": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "runtime": 175,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 380,
+    "tmdbId": 36955,
+    "score": 0.065268,
+    "title": "True Lies",
+    "poster_url": "https://image.tmdb.org/t/p/w342/pweFTnzzTfGK68woSVkiTgjLzWm.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/jRZ3joUcg8YDCQYl4Tog5xhY6wk.jpg",
+    "overview": "A fearless, globe-trotting, terrorist-battling secret agent has his life turned upside down when he discovers his wife might be having an affair with a used car salesman while terrorists smuggle nuclear war heads into the United States.",
+    "year": 1994,
+    "director": "James Cameron",
+    "runtime": 141,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 910,
+    "tmdbId": 239,
+    "score": 0.064412,
+    "title": "Some Like It Hot",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/5zTwAcnI3zCJ0mucPPnoBtkSWEV.jpg",
+    "overview": "In Prohibition-era Chicago, musicians Joe and Jerry witness a mob hit, and flee the state in an all-female band disguised as Josephine and Daphne, but further complications set in.",
+    "year": 1959,
+    "director": "Billy Wilder",
+    "runtime": 122,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 1252,
+    "tmdbId": 829,
+    "score": 0.062732,
+    "title": "Chinatown",
+    "poster_url": "https://image.tmdb.org/t/p/w342/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/eJ6kPtua2rEvjxHdCtnIobXJZSf.jpg",
+    "overview": "Private eye Jake Gittes lives off of the murky moral climate of sunbaked, pre-World War II Southern California. Hired by a beautiful socialite to investigate her husband's extra-marital affair, Gittes is swept into a maelstrom of double dealings and deadly deceits, uncovering a web of personal and political scandals that come crashing together.",
+    "year": 1974,
+    "director": "Roman Polanski",
+    "runtime": 130,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 750,
+    "tmdbId": 935,
+    "score": 0.061906,
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "poster_url": "https://image.tmdb.org/t/p/w342/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/AezAkLbfBM6IvsJQYzUuPleg8QS.jpg",
+    "overview": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it.",
+    "year": 1964,
+    "director": "Stanley Kubrick",
+    "runtime": 95,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "War"
+    ]
+  },
+  {
+    "movieId": 161,
+    "tmdbId": 8963,
+    "score": 0.060962,
+    "title": "Crimson Tide",
+    "poster_url": "https://image.tmdb.org/t/p/w342/21nqRJ6ofEgVvEl68J4O9V26Xzy.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/qKWQ9IEDkMawD7sgKnIGCdFAhct.jpg",
+    "overview": "After the Cold War, a breakaway Russian republic with nuclear warheads becomes a possible worldwide threat. U.S. submarine Capt. Frank Ramsey signs on a relatively green but highly recommended Lt. Cmdr. Ron Hunter to the USS Alabama, which may be the only ship able to stop a possible Armageddon. When Ramsey insists that the Alabama must act aggressively, Hunter, fearing they will start rather than stop a disaster, leads a potential mutiny to stop him.",
+    "year": 1995,
+    "director": "Tony Scott",
+    "runtime": 116,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "War"
+    ]
+  },
+  {
+    "movieId": 780,
+    "tmdbId": 602,
+    "score": 0.060783,
+    "title": "Independence Day",
+    "poster_url": "https://image.tmdb.org/t/p/w342/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/kFI1oF6KVnLEbUT7yLIbKXeyvu.jpg",
+    "overview": "Strange phenomena surface around the globe. The skies ignite. Terror races through the world's major cities. As these extraordinary events unfold, it becomes increasingly clear that a force of incredible magnitude has arrived. Its mission: total annihilation over the Fourth of July weekend. The last hope to stop the destruction is an unlikely group of people united by fate and unimaginable circumstances.",
+    "year": 1996,
+    "director": "Roland Emmerich",
+    "runtime": 145,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 457,
+    "tmdbId": 5503,
+    "score": 0.060655,
+    "title": "The Fugitive",
+    "poster_url": "https://image.tmdb.org/t/p/w342/b3rEtLKyOnF89mcK75GXDXdmOEf.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/7WVRxZ7KZmzoHnUkAjnEFT4o6Dw.jpg",
+    "overview": "Wrongfully convicted of murdering his wife and sentenced to death, Richard Kimble escapes from the law in an attempt to find the real killer and clear his name.",
+    "year": 1993,
+    "director": "Andrew Davis",
+    "runtime": 131,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 597,
+    "tmdbId": 114,
+    "score": 0.060449,
+    "title": "Pretty Woman",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hVHUfT801LQATGd26VPzhorIYza.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/sGEqHTylawwS6hwKultk1mKUjdB.jpg",
+    "overview": "While on a business trip in Los Angeles, Edward Lewis, a millionaire entrepreneur who makes a living buying and breaking up companies, picks up a prostitute, Vivian, while asking for directions; after, Edward hires Vivian to stay with him for the weekend to accompany him to a few social events, and the two get closer only to discover there are significant hurdles to overcome as they try to bridge the gap between their very different worlds.",
+    "year": 1990,
+    "director": "Garry Marshall",
+    "runtime": 120,
+    "original_language": "en",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 922,
+    "tmdbId": 599,
+    "score": 0.059104,
+    "title": "Sunset Boulevard",
+    "poster_url": "https://image.tmdb.org/t/p/w342/zt8aQ6ksqK6p1AopC5zVTDS9pKT.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/p47ihFj4A7EpBjmPHdTj4ipyq1S.jpg",
+    "overview": "A hack screenwriter writes a screenplay for a former silent film star who has faded into Hollywood obscurity.",
+    "year": 1950,
+    "director": "Billy Wilder",
+    "runtime": 110,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 300,
+    "tmdbId": 11450,
+    "score": 0.058502,
+    "title": "Quiz Show",
+    "poster_url": "https://image.tmdb.org/t/p/w342/yoGJo1h3Hl2exXPVcG9UXWDENtX.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/zfKV7ePKCw1n4VOZ2R6glMQRNKe.jpg",
+    "overview": "Herbert Stempel's transformation into an unexpected television personality unfolds as he secures victory on the cherished American game show, 'Twenty-One.' However, when the show introduces the highly skilled contestant Charles Van Doren to replace Stempel, it compels Stempel to let out his frustrations and call out the show as rigged. Lawyer Richard Goodwin steps in and attempts to uncover the orchestrated deception behind the scenes.",
+    "year": 1994,
+    "director": "Robert Redford",
+    "runtime": 133,
+    "original_language": "en",
+    "genres": [
+      "History",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 79132,
+    "tmdbId": 27205,
+    "score": 0.057739,
+    "title": "Inception",
+    "poster_url": "https://image.tmdb.org/t/p/w342/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ii8QGacT3MXESqBckQlyrATY0lT.jpg",
+    "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "runtime": 148,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ]
+  },
+  {
+    "movieId": 4973,
+    "tmdbId": 194,
+    "score": 0.057613,
+    "title": "Amélie",
+    "poster_url": "https://image.tmdb.org/t/p/w342/vZ9NhNbQQ3yhtiC5sbhpy5KTXns.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/6n53UI4mX9QMfe2S0Pgt8mGebY1.jpg",
+    "overview": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
+    "year": 2001,
+    "director": "Jean-Pierre Jeunet",
+    "runtime": 122,
+    "original_language": "fr",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 2858,
+    "tmdbId": 14,
+    "score": 0.056077,
+    "title": "American Beauty",
+    "poster_url": "https://image.tmdb.org/t/p/w342/wby9315QzVKdW9BonAefg8jGTTb.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/2ndw55F40IkALzWyjCCza3M6nqM.jpg",
+    "overview": "Lester Burnham, a depressed suburban father in a mid-life crisis, decides to turn his hectic life around after developing an infatuation with his daughter's attractive friend.",
+    "year": 1999,
+    "director": "Sam Mendes",
+    "runtime": 122,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1219,
+    "tmdbId": 539,
+    "score": 0.05581,
+    "title": "Psycho",
+    "poster_url": "https://image.tmdb.org/t/p/w342/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/vzXQEAmXIEWAtPCgB81bAS6EJCy.jpg",
+    "overview": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother.",
+    "year": 1960,
+    "director": "Alfred Hitchcock",
+    "runtime": 109,
+    "original_language": "en",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Mystery"
+    ]
+  },
+  {
+    "movieId": 34,
+    "tmdbId": 9598,
+    "score": 0.055694,
+    "title": "Babe",
+    "poster_url": "https://image.tmdb.org/t/p/w342/zKuQMtnbVTz9DsOnOJmlW71v4qH.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/agkZziO4ZPAsVfKUrJD68lys08P.jpg",
+    "overview": "Babe is a little pig who doesn't quite know his place in the world. With a bunch of odd friends, like Ferdinand the duck who thinks he is a rooster and Fly the dog he calls mum, Babe realises that he has the makings to become the greatest sheep pig of all time, and Farmer Hoggett knows it. With the help of the sheep dogs, Babe learns that a pig can be anything that he wants to be.",
+    "year": 1995,
+    "director": "Chris Noonan",
+    "runtime": 92,
+    "original_language": "en",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Comedy",
+      "Family"
+    ]
+  },
+  {
+    "movieId": 377,
+    "tmdbId": 1637,
+    "score": 0.055497,
+    "title": "Speed",
+    "poster_url": "https://image.tmdb.org/t/p/w342/82PkCE4R95KhHICUDF7G4Ly2z3l.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/dAi6Yymj9SqSMg6BzF6PW5Qhirh.jpg",
+    "overview": "Tensions run high when a crazed bomber rigs a Los Angeles bus with a device that will kill everyone on board if the vehicle's speed dips below fifty miles per hour.",
+    "year": 1994,
+    "director": "Jan de Bont",
+    "runtime": 116,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1207,
+    "tmdbId": 595,
+    "score": 0.055243,
+    "title": "To Kill a Mockingbird",
+    "poster_url": "https://image.tmdb.org/t/p/w342/gZycFUMLx2110dzK3nBNai7gfpM.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/zP6pqpSRRiOCjjC5oWKZKkHqoSB.jpg",
+    "overview": "Scout Finch, 6, and her older brother Jem live in sleepy Maycomb, Alabama, spending much of their time with their friend Dill and spying on their reclusive and mysterious neighbor, Boo Radley. When Atticus, their widowed father and a respected lawyer, defends a black man named Tom Robinson against fabricated rape charges, the trial and tangent events expose the children to evils of racism and stereotyping.",
+    "year": 1962,
+    "director": "Robert Mulligan",
+    "runtime": 129,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1230,
+    "tmdbId": 703,
+    "score": 0.055127,
+    "title": "Annie Hall",
+    "poster_url": "https://image.tmdb.org/t/p/w342/gBo4G0p8iVS998aYvXS656jbsH2.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/8n9dYsTbXTykzm2Nuy7R2ftapXQ.jpg",
+    "overview": "New York comedian Alvy Singer falls in love with the ditsy Annie Hall.",
+    "year": 1977,
+    "director": "Woody Allen",
+    "runtime": 93,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 913,
+    "tmdbId": 963,
+    "score": 0.05358,
+    "title": "The Maltese Falcon",
+    "poster_url": "https://image.tmdb.org/t/p/w342/bf4o6Uzw5wqLjdKwRuiDrN1xyvl.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/9xzVKUGbVKrrgwlmshJ8SxI5mL7.jpg",
+    "overview": "A private detective takes on a case that involves him with three eccentric criminals, a beautiful liar, and their quest for a priceless statuette.",
+    "year": 1941,
+    "director": "John Huston",
+    "runtime": 100,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1086,
+    "tmdbId": 521,
+    "score": 0.053059,
+    "title": "Dial M for Murder",
+    "poster_url": "https://image.tmdb.org/t/p/w342/4KKiFDvtEusJzqzlwHp7iMceXKS.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/gTsiagZaMjJxr6Q12KfOfC556d6.jpg",
+    "overview": "When her American lover visits London, a wealthy woman’s jealous husband hatches a plan to murder her and inherit her fortune.",
+    "year": 1954,
+    "director": "Alfred Hitchcock",
+    "runtime": 105,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 1104,
+    "tmdbId": 702,
+    "score": 0.05207,
+    "title": "A Streetcar Named Desire",
+    "poster_url": "https://image.tmdb.org/t/p/w342/aicdlO5vt7z2ARm279eGzJeYCLQ.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/or90vNrOVnYwi07fYYpQ3pbnjxP.jpg",
+    "overview": "A disturbed, aging Southern belle moves in with her sister for solace — but being face-to-face with her brutish brother-in-law accelerates her downward spiral.",
+    "year": 1951,
+    "director": "Elia Kazan",
+    "runtime": 125,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 587,
+    "tmdbId": 251,
+    "score": 0.05176,
+    "title": "Ghost",
+    "poster_url": "https://image.tmdb.org/t/p/w342/w9RaPHov8oM5cnzeE27isnFMsvS.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/6nLdSON3ErniBZTXWG7WRqs5jGz.jpg",
+    "overview": "After a young man is murdered, his spirit stays behind to warn his lover of impending danger, with the help of a reluctant psychic.",
+    "year": 1990,
+    "director": "Jerry Zucker",
+    "runtime": 127,
+    "original_language": "en",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Thriller",
+      "Mystery",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 2791,
+    "tmdbId": 813,
+    "score": 0.051641,
+    "title": "Airplane!",
+    "poster_url": "https://image.tmdb.org/t/p/w342/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/lz6Cy1JgOR72AilU2ghDvLKbgqT.jpg",
+    "overview": "An ex-fighter pilot forced to take over the controls of an airliner when the flight crew succumbs to food poisoning.",
+    "year": 1980,
+    "director": "Jim Abrahams",
+    "runtime": 88,
+    "original_language": "en",
+    "genres": [
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 1234,
+    "tmdbId": 9277,
+    "score": 0.04993,
+    "title": "The Sting",
+    "poster_url": "https://image.tmdb.org/t/p/w342/4VdQopZb0lx13Me3yxE5rUXMGCI.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/1r9lH3DaSWKGyvZaoo6BF5STOk5.jpg",
+    "overview": "A novice con man teams up with an acknowledged master to avenge the murder of a mutual friend by pulling off the ultimate big con and swindling a fortune from a big-time mobster.",
+    "year": 1973,
+    "director": "George Roy Hill",
+    "runtime": 129,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 2959,
+    "tmdbId": 550,
+    "score": 0.049816,
+    "title": "Fight Club",
+    "poster_url": "https://image.tmdb.org/t/p/w342/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/5TiwfWEaPSwD20uwXjCTUqpQX70.jpg",
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "year": 1999,
+    "director": "David Fincher",
+    "runtime": 139,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 16,
+    "tmdbId": 524,
+    "score": 0.049573,
+    "title": "Casino",
+    "poster_url": "https://image.tmdb.org/t/p/w342/gziIkUSnYuj9ChCi8qOu2ZunpSC.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/iZGiMD0p1M2AOmzKknFo5bkuz94.jpg",
+    "overview": "In Las Vegas, two best friends--a casino executive and a Mafia enforcer--compete for a gambling empire and a fast-living, fast-loving socialite.",
+    "year": 1995,
+    "director": "Martin Scorsese",
+    "runtime": 179,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 357,
+    "tmdbId": 712,
+    "score": 0.049125,
+    "title": "Four Weddings and a Funeral",
+    "poster_url": "https://image.tmdb.org/t/p/w342/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ejFaHWnDP29z7ePw2cJVOsWvOvH.jpg",
+    "overview": "Over the course of five social occasions, a committed bachelor must consider the notion that he may have discovered love.",
+    "year": 1994,
+    "director": "Mike Newell",
+    "runtime": 117,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 608,
+    "tmdbId": 275,
+    "score": 0.048884,
+    "title": "Fargo",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rt7cpEr1uP6RTZykBFhBTcRaKvG.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/747dgDfL5d8esobk7h4odaOFhUq.jpg",
+    "overview": "Jerry, a small-town Minnesota car salesman is bursting at the seams with debt... but he's got a plan. He's going to hire two thugs to kidnap his wife in a scheme to collect a hefty ransom from his wealthy father-in-law. It's going to be a snap and nobody's going to get hurt... until people start dying. Enter Police Chief Marge, a coffee-drinking, parka-wearing - and extremely pregnant - investigator who'll stop at nothing to get her man. And if you think her small-time investigative skills will give the crooks a run for their ransom... you betcha!",
+    "year": 1996,
+    "director": "Joel Coen",
+    "runtime": 98,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 344,
+    "tmdbId": 3049,
+    "score": 0.048858,
+    "title": "Ace Ventura: Pet Detective",
+    "poster_url": "https://image.tmdb.org/t/p/w342/pqiRuETmuSybfnVZ7qyeoXhQyN1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/nbvREKIjX16mwNZtFqAoQTTHPnQ.jpg",
+    "overview": "He's Ace Ventura: Pet Detective. The Ace is on the case to find the Miami Dolphins' missing mascot and quarterback Dan Marino. He goes eyeball to eyeball with a man-eating shark, stakes out the Miami Dolphins and woos and wows the ladies. Whether he's undercover, under fire or underwater, he always gets his man… or beast!",
+    "year": 1994,
+    "director": "Tom Shadyac",
+    "runtime": 86,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 1307,
+    "tmdbId": 639,
+    "score": 0.048739,
+    "title": "When Harry Met Sally...",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rFOiFUhTMtDetqCGClC9PIgnC1P.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/i8aIbji5vcPoHwcLBZYQSniGkAI.jpg",
+    "overview": "Sex always gets in the way of friendships between men and women. At least, that's what Harry Burns believes. So when Harry meets Sally Albright and a deep friendship blossoms between them, Harry's determined not to let his attraction to Sally destroy it. But when a night of weakness ends in a morning of panic, can the pair avoid succumbing to Harry's fears by remaining friends and admitting they just might be the perfect match for each other?",
+    "year": 1989,
+    "director": "Rob Reiner",
+    "runtime": 96,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 110,
+    "tmdbId": 197,
+    "score": 0.048653,
+    "title": "Braveheart",
+    "poster_url": "https://image.tmdb.org/t/p/w342/or1gBugydmjToAEq7OZY0owwFk.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/8lBcqakI3F19NWkXdqE0M8W76b9.jpg",
+    "overview": "Enraged at the slaughter of Murron, his new bride and childhood love, Scottish warrior William Wallace slays a platoon of the local English lord's soldiers. This leads the village to revolt and, eventually, the entire country to rise up against English rule.",
+    "year": 1995,
+    "director": "Mel Gibson",
+    "runtime": 178,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Drama",
+      "History",
+      "War"
+    ]
+  },
+  {
+    "movieId": 1247,
+    "tmdbId": 37247,
+    "score": 0.048029,
+    "title": "The Graduate",
+    "poster_url": "https://image.tmdb.org/t/p/w342/z1Z1tZMR66RxcNeHbwoEhYeqOlP.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/lIY8ZTp6OJTAMfiorDGsPsJ5LT.jpg",
+    "overview": "A disillusioned college graduate finds himself torn between his older lover and her daughter.",
+    "year": 1967,
+    "director": "Mike Nichols",
+    "runtime": 106,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 3435,
+    "tmdbId": 996,
+    "score": 0.047907,
+    "title": "Double Indemnity",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rVNYZZgfhwqVMMWlBmxOfWqnwCj.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/byQdu1nzQLI9t1VeoP1xuQfru3L.jpg",
+    "overview": "An insurance representative is seduced by a dissatisfied housewife into a scheme of insurance fraud and murder that arouses the suspicion of his colleague, a claims investigator.",
+    "year": 1944,
+    "director": "Billy Wilder",
+    "runtime": 107,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 47,
+    "tmdbId": 807,
+    "score": 0.047611,
+    "title": "Se7en",
+    "poster_url": "https://image.tmdb.org/t/p/w342/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/hkKTtlHjiVUW5XRfkQfl3FmJUfX.jpg",
+    "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Somerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+    "year": 1995,
+    "director": "David Fincher",
+    "runtime": 127,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1704,
+    "tmdbId": 489,
+    "score": 0.047406,
+    "title": "Good Will Hunting",
+    "poster_url": "https://image.tmdb.org/t/p/w342/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/bpV8wn48s82au37QyUJ51S7X2Vf.jpg",
+    "overview": "Headstrong yet aimless, Will Hunting has a genius-level IQ but chooses to work as a janitor at MIT. When he secretly solves highly difficult graduate-level math problems, his talents are discovered by Professor Gerald Lambeau, who decides to help the misguided youth reach his potential. When Will is arrested for attacking a police officer, Professor Lambeau makes a deal to get leniency for him if he gets court-ordered therapy. Eventually, therapist Dr. Sean Maguire helps Will confront the demons that are holding him back.",
+    "year": 1997,
+    "director": "Gus Van Sant",
+    "runtime": 127,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1961,
+    "tmdbId": 380,
+    "score": 0.047261,
+    "title": "Rain Man",
+    "poster_url": "https://image.tmdb.org/t/p/w342/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/b3tos7Tsd6lsTe52Nn4TMrEQg65.jpg",
+    "overview": "When car dealer Charlie Babbitt learns that his estranged father has died, he returns home to Cincinnati, where he discovers that he has a savant older brother named Raymond and that his father's $3 million fortune is being left to the mental institution in which Raymond lives. Motivated by his father's money, Charlie checks Raymond out of the facility in order to return with him to Los Angeles. The brothers' cross-country trip ends up changing both their lives.",
+    "year": 1988,
+    "director": "Barry Levinson",
+    "runtime": 134,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1221,
+    "tmdbId": 240,
+    "score": 0.047207,
+    "title": "The Godfather Part II",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+    "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "runtime": 202,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 36,
+    "tmdbId": 687,
+    "score": 0.046754,
+    "title": "Dead Man Walking",
+    "poster_url": "https://image.tmdb.org/t/p/w342/eShxyjhWoFl3BwsuEmVsr4nLaMZ.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/gwRWQeHfPuA8mg73kydQsM8rdXq.jpg",
+    "overview": "A death row inmate turns for spiritual guidance to a local nun in the days leading up to his scheduled execution for the murders of a young couple.",
+    "year": 1995,
+    "director": "Tim Robbins",
+    "runtime": 122,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 1097,
+    "tmdbId": 601,
+    "score": 0.046142,
+    "title": "E.T. the Extra-Terrestrial",
+    "poster_url": "https://image.tmdb.org/t/p/w342/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/mXLVA0YL6tcXi6SJSuAh9ONXFj5.jpg",
+    "overview": "An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+    "year": 1982,
+    "director": "Steven Spielberg",
+    "runtime": 115,
+    "original_language": "en",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ]
+  },
+  {
+    "movieId": 32,
+    "tmdbId": 63,
+    "score": 0.045972,
+    "title": "Twelve Monkeys",
+    "poster_url": "https://image.tmdb.org/t/p/w342/gt3iyguaCIw8DpQZI1LIN5TohM2.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/mKIkGoyuR71qz6FdiEiOjxvBQcS.jpg",
+    "overview": "In the year 2035, convict James Cole reluctantly volunteers to be sent back in time to discover the origin of a deadly virus that wiped out nearly all of the earth's population and forced the survivors into underground communities. But when Cole is mistakenly sent to 1990 instead of 1996, he's arrested and locked up in a mental hospital. There he meets psychiatrist Dr. Kathryn Railly and the son of a famous virus expert who may hold the key to the Army of the 12 Monkeys; thought to be responsible for unleashing the killer disease.",
+    "year": 1995,
+    "director": "Terry Gilliam",
+    "runtime": 129,
+    "original_language": "en",
+    "genres": [
+      "Science Fiction",
+      "Thriller",
+      "Mystery"
+    ]
+  },
+  {
+    "movieId": 2011,
+    "tmdbId": 165,
+    "score": 0.045091,
+    "title": "Back to the Future Part II",
+    "poster_url": "https://image.tmdb.org/t/p/w342/YBawEsTkUZBDajKbd5LiHkmMGf.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/w6tPctxWAsHoQXeKxxNOT6lYKpx.jpg",
+    "overview": "Marty and Doc are at it again as the time-traveling duo head to 2015 to nip some McFly family woes in the bud. But things go awry thanks to bully Biff Tannen and a pesky sports almanac. In a last-ditch attempt to set things straight, Marty finds himself bound for 1955 and face to face with his teenage parents -- again.",
+    "year": 1989,
+    "director": "Robert Zemeckis",
+    "runtime": 108,
+    "original_language": "en",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 339,
+    "tmdbId": 2064,
+    "score": 0.044703,
+    "title": "While You Were Sleeping",
+    "poster_url": "https://image.tmdb.org/t/p/w342/qNGO3ETcNwlWqK2kNRpbJSJRlos.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/gCYvQJ1MhyK4kYFnjpNbNqQtaYc.jpg",
+    "overview": "A transit worker pulls commuter Peter off railway tracks after he's mugged, but—while he's in a coma—his family mistakenly thinks she's Peter's fiancée, and she doesn't correct them. Things get more complicated when she falls for his brother, who's not quite sure that she's who she claims to be.",
+    "year": 1995,
+    "director": "Jon Turteltaub",
+    "runtime": 103,
+    "original_language": "en",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 500,
+    "tmdbId": 788,
+    "score": 0.044569,
+    "title": "Mrs. Doubtfire",
+    "poster_url": "https://image.tmdb.org/t/p/w342/shHrSmXS5140o6sQzgzXxn3KqSm.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/sTgavNm82pTaZR9U2NQZ1J2FrJz.jpg",
+    "overview": "Loving but irresponsible dad Daniel Hillard, estranged from his exasperated spouse, is crushed by a court order allowing only weekly visits with his kids. When Daniel learns his ex needs a housekeeper, he gets the job -- disguised as a British nanny. Soon he becomes not only his children's best pal but the kind of parent he should have been from the start.",
+    "year": 1993,
+    "director": "Chris Columbus",
+    "runtime": 125,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ]
+  },
+  {
+    "movieId": 1267,
+    "tmdbId": 982,
+    "score": 0.044549,
+    "title": "The Manchurian Candidate",
+    "poster_url": "https://image.tmdb.org/t/p/w342/2xQ856kd9hw6bB3OnusGyTvvkwB.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/bbec0wDUaV8nQnQHC6Fb0fSYwNM.jpg",
+    "overview": "Near the end of the Korean War, a platoon of U.S. soldiers is captured by communists and brainwashed. Following the war, the platoon is returned home, and Sergeant Raymond Shaw is lauded as a hero by the rest of his platoon. However, the platoon commander, Captain Bennett Marco, finds himself plagued by strange nightmares and soon races to uncover a terrible plot.",
+    "year": 1962,
+    "director": "John Frankenheimer",
+    "runtime": 126,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 508,
+    "tmdbId": 9800,
+    "score": 0.044084,
+    "title": "Philadelphia",
+    "poster_url": "https://image.tmdb.org/t/p/w342/tFe5Yoo5zT495okA49bq1vPPkiV.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/mE2TjYsnqdWxPt45kIElw3az4O9.jpg",
+    "overview": "Two competing lawyers join forces to sue a prestigious law firm for AIDS discrimination. As their unlikely friendship develops their courage overcomes the prejudice and corruption of their powerful adversaries.",
+    "year": 1993,
+    "director": "Jonathan Demme",
+    "runtime": 126,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 926,
+    "tmdbId": 705,
+    "score": 0.043694,
+    "title": "All About Eve",
+    "poster_url": "https://image.tmdb.org/t/p/w342/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/zAL3LOswagN9onjN8DPcNFTqKuD.jpg",
+    "overview": "From the moment she glimpses her idol at the stage door, Eve Harrington is determined to take the reins of power away from the great actress Margo Channing. Eve maneuvers her way into Margo's Broadway role, becomes a sensation and even causes turmoil in the lives of Margo's director boyfriend, her playwright and his wife. Only the cynical drama critic sees through Eve, admiring her audacity and perfect pattern of deceit.",
+    "year": 1950,
+    "director": "Joseph L. Mankiewicz",
+    "runtime": 139,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 899,
+    "tmdbId": 872,
+    "score": 0.043691,
+    "title": "Singin' in the Rain",
+    "poster_url": "https://image.tmdb.org/t/p/w342/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/6qOyw4yfzbzTp5YsCX26C28Do0S.jpg",
+    "overview": "In 1927 Hollywood, a silent film star falls for a chorus girl just as he and his paranoid screen partner struggle to make the difficult transition to talking pictures.",
+    "year": 1952,
+    "director": "Stanley Donen",
+    "runtime": 103,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 2186,
+    "tmdbId": 845,
+    "score": 0.043539,
+    "title": "Strangers on a Train",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ihC083U7ef56Ui4x0P0dobojrZ1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/dN6f8Bx2ahHEikOXrO7wOnW1hFR.jpg",
+    "overview": "A charming psychopath tries to coerce a tennis star into his theory that two strangers can commit the perfect crime by exchanging murders—each killing the other’s most-hated person.",
+    "year": 1951,
+    "director": "Alfred Hitchcock",
+    "runtime": 101,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1212,
+    "tmdbId": 1092,
+    "score": 0.043208,
+    "title": "The Third Man",
+    "poster_url": "https://image.tmdb.org/t/p/w342/wxTbbrWypRgUcsTS9zw7p9tMbNq.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/rLLhOCgAjuvlKmjUqVb7P1UAbUI.jpg",
+    "overview": "In postwar Vienna, Austria, Holly Martins, a writer of pulp Westerns, arrives penniless as a guest of his childhood chum Harry Lime, only to learn he has died. Martins develops a conspiracy theory after learning of a \"third man\" present at the time of Harry's death, running into interference from British officer Major Calloway, and falling head-over-heels for Harry's grief-stricken lover, Anna.",
+    "year": 1949,
+    "director": "Carol Reed",
+    "runtime": 105,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ]
+  },
+  {
+    "movieId": 4226,
+    "tmdbId": 77,
+    "score": 0.042915,
+    "title": "Memento",
+    "poster_url": "https://image.tmdb.org/t/p/w342/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+    "overview": "Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form of short-term memory loss. Although he can recall details of life before his accident, Leonard cannot remember what happened fifteen minutes ago, where he's going, or why.",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "runtime": 113,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 592,
+    "tmdbId": 268,
+    "score": 0.042708,
+    "title": "Batman",
+    "poster_url": "https://image.tmdb.org/t/p/w342/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/zlsaQEE26TS34ziXAiNIAqa0MLX.jpg",
+    "overview": "Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as Batman, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman known as 'The Joker' seizes control of Gotham's criminal underworld, Batman must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale.",
+    "year": 1989,
+    "director": "Tim Burton",
+    "runtime": 126,
+    "original_language": "en",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 920,
+    "tmdbId": 770,
+    "score": 0.042198,
+    "title": "Gone with the Wind",
+    "poster_url": "https://image.tmdb.org/t/p/w342/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/4FHcxMtVruMr7ltU2cItWssLjTP.jpg",
+    "overview": "The spoiled daughter of a Georgia plantation owner conducts a tumultuous romance with a cynical profiteer during the American Civil War and Reconstruction Era.",
+    "year": 1939,
+    "director": "Victor Fleming",
+    "runtime": 233,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "War",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 539,
+    "tmdbId": 858,
+    "score": 0.042169,
+    "title": "Sleepless in Seattle",
+    "poster_url": "https://image.tmdb.org/t/p/w342/jAXfku1u1uaLGh4cUmK0ESf1pPu.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/7ME0fJZxjEoSGPP4E4bbYT5zoqt.jpg",
+    "overview": "After the death of his mother, a young boy calls a radio station in an attempt to set his father up on a date. Across the country, an engaged woman becomes convinced that they belong together, despite their never having met. Will their paths collide despite the odds?",
+    "year": 1993,
+    "director": "Nora Ephron",
+    "runtime": 105,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 1213,
+    "tmdbId": 769,
+    "score": 0.041784,
+    "title": "GoodFellas",
+    "poster_url": "https://image.tmdb.org/t/p/w342/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
+    "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+    "year": 1990,
+    "director": "Martin Scorsese",
+    "runtime": 145,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 165,
+    "tmdbId": 1572,
+    "score": 0.041094,
+    "title": "Die Hard: With a Vengeance",
+    "poster_url": "https://image.tmdb.org/t/p/w342/buqmCdFQEWwEpL3agGgg2GVjN2d.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/fBvSfLetWlAMevQVHa0nBDV1Fon.jpg",
+    "overview": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane thought he'd seen it all, until a genius named Simon engages McClane, his new \"partner\" -- and his beloved city -- in a deadly game that demands their concentration.",
+    "year": 1995,
+    "director": "John McTiernan",
+    "runtime": 128,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1358,
+    "tmdbId": 12498,
+    "score": 0.041056,
+    "title": "Sling Blade",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ivBIBd1LNaozcmytZUyE1yIXZms.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/s0MYaSiEZy9H0cXxxay5LEdcxYs.jpg",
+    "overview": "Karl Childers, a mentally disabled man, has been in the custody of the state mental hospital since the age of 12 for killing his mother and her lover. Although thoroughly institutionalized, he is deemed fit to be released into the outside world.",
+    "year": 1996,
+    "director": "Billy Bob Thornton",
+    "runtime": 135,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 3147,
+    "tmdbId": 497,
+    "score": 0.040893,
+    "title": "The Green Mile",
+    "poster_url": "https://image.tmdb.org/t/p/w342/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/lgJlu0Fp1mdTaFEeaQJ7DskhSOr.jpg",
+    "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+    "year": 1999,
+    "director": "Frank Darabont",
+    "runtime": 189,
+    "original_language": "en",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 4995,
+    "tmdbId": 453,
+    "score": 0.040855,
+    "title": "A Beautiful Mind",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/vVBcIN68kFq681b4lObiNJhEVro.jpg",
+    "overview": "From the heights of notoriety to the depths of depravity, John Forbes Nash Jr. experiences it all. As a brilliant but socially awkward mathematician, he made a groundbreaking discovery early in his career and stands on the brink of international acclaim. But as the handsome and arrogant Nash accepts secret work in cryptography, he becomes entangled in a mysterious conspiracy. His life takes a nightmarish turn and he soon finds himself on a painful and harrowing journey of self-discovery.",
+    "year": 2001,
+    "director": "Ron Howard",
+    "runtime": 135,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 63082,
+    "tmdbId": 12405,
+    "score": 0.040672,
+    "title": "Slumdog Millionaire",
+    "poster_url": "https://image.tmdb.org/t/p/w342/5leCCi7ZF0CawAfM5Qo2ECKPprc.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/1wZoVT9RJsZmNjg8CecXqSgFUd9.jpg",
+    "overview": "A teenager reflects on his life after being accused of cheating on the Indian version of \"Who Wants to be a Millionaire?\".",
+    "year": 2008,
+    "director": "Danny Boyle",
+    "runtime": 121,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 1084,
+    "tmdbId": 475,
+    "score": 0.040621,
+    "title": "Bonnie and Clyde",
+    "poster_url": "https://image.tmdb.org/t/p/w342/sCSQFK9kMsprT4jgWqgw82dT6WI.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/fyzSiE8IWezmd3ls1amHNeOkrEf.jpg",
+    "overview": "In the 1930s, bored European-American waitress Bonnie Parker falls in love with a European-American ex-con named Clyde Barrow and together they start a violent crime spree through the country, stealing cars and robbing banks.",
+    "year": 1967,
+    "director": "Arthur Penn",
+    "runtime": 111,
+    "original_language": "en",
+    "genres": [
+      "Crime",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 916,
+    "tmdbId": 804,
+    "score": 0.040558,
+    "title": "Roman Holiday",
+    "poster_url": "https://image.tmdb.org/t/p/w342/8lI9dmz1RH20FAqltkGelY1v4BE.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/n0MyuZW9WJBGCYhzhfCI3d4zlRo.jpg",
+    "overview": "Overwhelmed by her suffocating schedule, touring European princess Ann takes off for a night while in Rome. When a sedative she took from her doctor kicks in, however, she falls asleep on a park bench and is found by an American reporter, Joe Bradley, who takes her back to his apartment for safety. At work the next morning, Joe finds out Ann's regal identity and bets his editor he can get exclusive interview with her, but romance soon gets in the way.",
+    "year": 1953,
+    "director": "William Wyler",
+    "runtime": 119,
+    "original_language": "en",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 231,
+    "tmdbId": 8467,
+    "score": 0.03999,
+    "title": "Dumb and Dumber",
+    "poster_url": "https://image.tmdb.org/t/p/w342/4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/9FeYBZDvNTh4ZmweekJvwyIxIiL.jpg",
+    "overview": "Lloyd and Harry are two men whose stupidity is really indescribable. When Mary, a beautiful woman, loses an important suitcase with money before she leaves for Aspen, the two friends (who have found the suitcase) decide to return it to her. After some \"adventures\" they finally get to Aspen where, using the lost money they live it up and fight for Mary's heart.",
+    "year": 1994,
+    "director": "Peter Farrelly",
+    "runtime": 107,
+    "original_language": "en",
+    "genres": [
+      "Comedy"
+    ]
+  },
+  {
+    "movieId": 60069,
+    "tmdbId": 10681,
+    "score": 0.039378,
+    "title": "WALL·E",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg",
+    "overview": "What if mankind had to leave Earth and somebody forgot to turn the last robot off? After hundreds of years doing what he was built for, WALL•E discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has inadvertently stumbled upon the key to the planet's future, and races back to space to report to the humans. Meanwhile, WALL•E chases EVE across the galaxy and sets into motion one of the most imaginative adventures ever brought to the big screen.",
+    "year": 2008,
+    "director": "Andrew Stanton",
+    "runtime": 98,
+    "original_language": "en",
+    "genres": [
+      "Animation",
+      "Family",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 6016,
+    "tmdbId": 598,
+    "score": 0.039254,
+    "title": "City of God",
+    "poster_url": "https://image.tmdb.org/t/p/w342/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/uvitbjFU4JqvMwIkMWHp69bmUzG.jpg",
+    "overview": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.",
+    "year": 2002,
+    "director": "Fernando Meirelles",
+    "runtime": 129,
+    "original_language": "pt",
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "movieId": 909,
+    "tmdbId": 284,
+    "score": 0.039232,
+    "title": "The Apartment",
+    "poster_url": "https://image.tmdb.org/t/p/w342/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/2L8U8rUyWeFTb6n1egTNeJsEsvj.jpg",
+    "overview": "Bud Baxter is a minor clerk in a huge New York insurance company, until he discovers a quick way to climb the corporate ladder. He lends out his apartment to the executives as a place to take their mistresses. Although he often has to deal with the aftermath of their visits, one night he's left with a major problem to solve.",
+    "year": 1960,
+    "director": "Billy Wilder",
+    "runtime": 125,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 2571,
+    "tmdbId": 603,
+    "score": 0.03916,
+    "title": "The Matrix",
+    "poster_url": "https://image.tmdb.org/t/p/w342/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+    "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+    "year": 1999,
+    "director": "Lana Wachowski",
+    "runtime": 136,
+    "original_language": "en",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ]
+  },
+  {
+    "movieId": 933,
+    "tmdbId": 381,
+    "score": 0.038963,
+    "title": "To Catch a Thief",
+    "poster_url": "https://image.tmdb.org/t/p/w342/6M6NwjV3XvtayljoiZ8wRHOKCQG.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/jGyDvz8WjVZzHX573WDs8BTIUU9.jpg",
+    "overview": "When a string of jewel robberies hits the French Riviera, suspicion falls on retired thief John “The Cat” Robie. To clear his name, he sets out to trap the copycat himself—entangling a wealthy widow and her beguiling daughter in a seductive game of pursuit, deception, and desire.",
+    "year": 1955,
+    "director": "Alfred Hitchcock",
+    "runtime": 106,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 1784,
+    "tmdbId": 2898,
+    "score": 0.038792,
+    "title": "As Good as It Gets",
+    "poster_url": "https://image.tmdb.org/t/p/w342/xXxuJPNUDZ0vjsAXca0O5p3leVB.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/x7y8ezKtU1vRInk0dmbvDoKgJ8u.jpg",
+    "overview": "A misanthropic author, a single mother and waitress, and a gay artist form an unlikely friendship after the artist is assaulted in a robbery.",
+    "year": 1997,
+    "director": "James L. Brooks",
+    "runtime": 139,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 266,
+    "tmdbId": 4476,
+    "score": 0.038514,
+    "title": "Legends of the Fall",
+    "poster_url": "https://image.tmdb.org/t/p/w342/t1KPGlW0UGd0m515LPQmk2F4nu1.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/fOfcbdBQBCO4Y2hy6DfLbb30klU.jpg",
+    "overview": "In early 20th-century Montana, Col. William Ludlow lives on a ranch in the wilderness with his sons, Alfred, Tristan, and Samuel. Eventually, the unconventional but close-knit family are bound by loyalty, tested by war, and torn apart by love, as told over the course of several decades in this epic saga.",
+    "year": 1994,
+    "director": "Edward Zwick",
+    "runtime": 133,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Western",
+      "Romance",
+      "War",
+      "Action"
+    ]
+  },
+  {
+    "movieId": 588,
+    "tmdbId": 812,
+    "score": 0.038434,
+    "title": "Aladdin",
+    "poster_url": "https://image.tmdb.org/t/p/w342/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/nenJjvfe2Eq8uBMXFJnWj5mw4bi.jpg",
+    "overview": "In the boorish city of Agrabah, kind-hearted street urchin Aladdin and Princess Jasmine fall in love, although she can only marry a prince. He and power-hungry Grand Vizier Jafar vie for a magic lamp that can fulfill their wishes.",
+    "year": 1992,
+    "director": "Ron Clements",
+    "runtime": 92,
+    "original_language": "en",
+    "genres": [
+      "Animation",
+      "Family",
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 898,
+    "tmdbId": 981,
+    "score": 0.038116,
+    "title": "The Philadelphia Story",
+    "poster_url": "https://image.tmdb.org/t/p/w342/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/iItypZVpdnxTFgA0iv345AzMUqk.jpg",
+    "overview": "When a rich woman's ex-husband and a tabloid-type reporter turn up just before her planned remarriage, she begins to learn the truth about herself.",
+    "year": 1940,
+    "director": "George Cukor",
+    "runtime": 113,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 1952,
+    "tmdbId": 3116,
+    "score": 0.037809,
+    "title": "Midnight Cowboy",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ckklq45UxUkwgHve9xItXqXr06r.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/mRVzzlXswVmXWqCPni9JIla5fmj.jpg",
+    "overview": "Joe Buck is a wide-eyed hustler from Texas hoping to score big with wealthy New York City women; he finds a companion in Enrico \"Ratso\" Rizzo, an ailing swindler with a bum leg and a quixotic fantasy of escaping to Florida.",
+    "year": 1969,
+    "director": "John Schlesinger",
+    "runtime": 113,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 515,
+    "tmdbId": 1245,
+    "score": 0.037678,
+    "title": "The Remains of the Day",
+    "poster_url": "https://image.tmdb.org/t/p/w342/uDGDtqSvuch324WnM7Ukdp1bCAQ.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/vFhxd3Z1zaV3Yu5XLpvWzSxJCe8.jpg",
+    "overview": "A rule-bound head butler's world of manners and decorum in the household he maintains is tested by the arrival of a housekeeper who falls in love with him in post-WWI Britain. The possibility of romance and his master's cultivation of ties with the Nazi cause challenge his carefully maintained veneer of servitude.",
+    "year": 1993,
+    "director": "James Ivory",
+    "runtime": 134,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 454,
+    "tmdbId": 37233,
+    "score": 0.037654,
+    "title": "The Firm",
+    "poster_url": "https://image.tmdb.org/t/p/w342/kFexXCzidkm4LwlgZqxsJsDQB5v.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/jlUTfePS1XRyMpgZvjFvDk7yEi0.jpg",
+    "overview": "Mitch McDeere is a young man with a promising future in Law. About to sit his Bar exam, he is approached by 'The Firm' and made an offer he doesn't refuse. Seduced by the money and gifts showered on him, he is totally oblivious to the more sinister side of his company. Then, two Associates are murdered. The FBI contact him, asking him for information and suddenly his life is ruined. He has a choice - work with the FBI, or stay with the Firm. Either way he will lose his life as he knows it. Mitch figures the only way out is to follow his own plan...",
+    "year": 1993,
+    "director": "Sydney Pollack",
+    "runtime": 154,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ]
+  },
+  {
+    "movieId": 2324,
+    "tmdbId": 637,
+    "score": 0.037238,
+    "title": "Life Is Beautiful",
+    "poster_url": "https://image.tmdb.org/t/p/w342/mfnkSeeVOBVheuyn2lo4tfmOPQb.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/6aNKD81RHR1DqUUa8kOZ1TBY1Lp.jpg",
+    "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+    "year": 1997,
+    "director": "Roberto Benigni",
+    "runtime": 116,
+    "original_language": "it",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 7361,
+    "tmdbId": 38,
+    "score": 0.037026,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "poster_url": "https://image.tmdb.org/t/p/w342/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/744ybMaYRry1IQKoDakMc4GEU4L.jpg",
+    "overview": "Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.",
+    "year": 2004,
+    "director": "Michel Gondry",
+    "runtime": 108,
+    "original_language": "en",
+    "genres": [
+      "Science Fiction",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "movieId": 367,
+    "tmdbId": 854,
+    "score": 0.037013,
+    "title": "The Mask",
+    "poster_url": "https://image.tmdb.org/t/p/w342/jPC2eYub74zwf2tPGVtzSlBW6Oy.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/bQlw59HncOXX9alFlOYKHAvSnm.jpg",
+    "overview": "Stanley, a meek bank employee, turns into an eccentric and maniacal green-skinned superhero who can bend reality, after wearing a wooden mask that was created by Loki, the Norse god of mischief.",
+    "year": 1994,
+    "director": "Chuck Russell",
+    "runtime": 101,
+    "original_language": "en",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Crime",
+      "Fantasy"
+    ]
+  },
+  {
+    "movieId": 235,
+    "tmdbId": 522,
+    "score": 0.037009,
+    "title": "Ed Wood",
+    "poster_url": "https://image.tmdb.org/t/p/w342/jNao464ZTwWUWr3uJJ8swVgaKd9.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/9Lc59aJZVILQ5grIqhl9jaMGOpv.jpg",
+    "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
+    "year": 1994,
+    "director": "Tim Burton",
+    "runtime": 127,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "History"
+    ]
+  },
+  {
+    "movieId": 2762,
+    "tmdbId": 745,
+    "score": 0.036629,
+    "title": "The Sixth Sense",
+    "poster_url": "https://image.tmdb.org/t/p/w342/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/paUKxrbN2ww0JeT2JtvgAuaGlPf.jpg",
+    "overview": "Following an unexpected tragedy, child psychologist Malcolm Crowe meets a nine year old boy named Cole Sear, who is hiding a dark secret.",
+    "year": 1999,
+    "director": "M. Night Shyamalan",
+    "runtime": 107,
+    "original_language": "en",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 930,
+    "tmdbId": 303,
+    "score": 0.036349,
+    "title": "Notorious",
+    "poster_url": "https://image.tmdb.org/t/p/w342/4RERYb1NIQrJHYY5e8nUlYM7t2z.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/40Rl5nZRxXQ4kHV4Lhghj5iQZZN.jpg",
+    "overview": "In order to help bring Nazis to justice, U.S. government agent T.R. Devlin recruits Alicia Huberman, the American daughter of a convicted German war criminal, as a spy. As they begin to fall for one another, Alicia is instructed to win the affections of Alexander Sebastian, a Nazi hiding out in Brazil. When Sebastian becomes serious about his relationship with Alicia, the stakes get higher, and Devlin must watch her slip further undercover.",
+    "year": 1946,
+    "director": "Alfred Hitchcock",
+    "runtime": 103,
+    "original_language": "en",
+    "genres": [
+      "Thriller",
+      "Romance",
+      "Mystery"
+    ]
+  },
+  {
+    "movieId": 2716,
+    "tmdbId": 620,
+    "score": 0.036305,
+    "title": "Ghostbusters",
+    "poster_url": "https://image.tmdb.org/t/p/w342/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/c6yfABGVKuB5cjoOwdX4AJMlzUz.jpg",
+    "overview": "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \"ghostbusters\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
+    "year": 1984,
+    "director": "Ivan Reitman",
+    "runtime": 107,
+    "original_language": "en",
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ]
+  },
+  {
+    "movieId": 1228,
+    "tmdbId": 1578,
+    "score": 0.036108,
+    "title": "Raging Bull",
+    "poster_url": "https://image.tmdb.org/t/p/w342/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/wgq2oA1aJiawBlRDIU8agXk7DQQ.jpg",
+    "overview": "The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.",
+    "year": 1980,
+    "director": "Martin Scorsese",
+    "runtime": 129,
+    "original_language": "en",
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "movieId": 953,
+    "tmdbId": 1585,
+    "score": 0.035605,
+    "title": "It's a Wonderful Life",
+    "poster_url": "https://image.tmdb.org/t/p/w342/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+    "backdrop_url": "https://image.tmdb.org/t/p/w780/rqmE0aFFerz8E8PkGOKPAoIY5Ax.jpg",
+    "overview": "A holiday favourite for generations...  George Bailey has spent his entire life giving to the people of Bedford Falls.  All that prevents rich skinflint Mr. Potter from taking over the entire town is George's modest building and loan company.  But on Christmas Eve the business's $8,000 is lost and George's troubles begin.",
+    "year": 1946,
+    "director": "Frank Capra",
+    "runtime": 130,
+    "original_language": "en",
+    "genres": [
+      "Drama",
+      "Family",
+      "Fantasy"
+    ]
+  }
+]
