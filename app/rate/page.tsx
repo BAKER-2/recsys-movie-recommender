@@ -22,6 +22,9 @@ export default function RatePage() {
   const [ratings, setRatings] = useState<RatingsMap>({});
   const [loading, setLoading] = useState(true);
 
+  // how many movies are currently shown
+  const [visibleCount, setVisibleCount] = useState(20);
+
   // Load onboarding movies
   useEffect(() => {
     fetch("/onboarding_250_diverse.json")
@@ -53,35 +56,88 @@ export default function RatePage() {
     setRatings({});
   }
 
+  const visibleMovies = useMemo(() => {
+    return movies.slice(0, Math.min(visibleCount, movies.length));
+  }, [movies, visibleCount]);
+
+  const canLoadMore = visibleCount < movies.length;
+
+  async function generate() {
+    const payload = Object.entries(ratings).map(([movieId, rating]) => ({
+      movieId: Number(movieId),
+      rating: Number(rating),
+    }));
+
+    const res = await fetch("/api/recommend", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ratings: payload }),
+    });
+
+    const data = await res.json();
+
+    // Store a BIG pool (e.g., top 2500) so filters/watched can still keep 50 results
+    localStorage.setItem(
+      "personalized_recs_pool_v1",
+      JSON.stringify(data.recs || [])
+    );
+
+    // Optional: clear watched when generating new recommendations
+    localStorage.removeItem("watched_v1");
+
+    window.location.href = "/results";
+  }
+
   if (loading) {
     return (
-      <main className="min-h-screen flex items-center justify-center bg-black text-white">
+      <main className="min-h-screen flex items-center justify-center text-white">
         <p className="text-lg">Loading onboarding movies…</p>
       </main>
     );
   }
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="sticky top-0 z-20 border-b border-zinc-800 bg-black/80 backdrop-blur">
+    <main className="min-h-screen text-white">
+      {/* Top nav */}
+      <div className="border-b border-zinc-800">
+        <div className="mx-auto max-w-6xl px-6 py-4 flex items-center gap-6">
+          <a href="/" className="hover:text-zinc-300">
+            Home
+          </a>
+          <a href="/rate" className="font-semibold hover:text-zinc-300">
+            Rate
+          </a>
+          <a href="/results" className="hover:text-zinc-300">
+            Results
+          </a>
+        </div>
+      </div>
+
+      {/* Sticky header */}
+      <div className="sticky top-0 z-20 border-b border-zinc-800 bg-black/60 backdrop-blur">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold">Rate movies</h1>
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm text-zinc-300">
               Rate as many as you can — more ratings = better personalization.
+            </p>
+            <p className="text-xs text-zinc-400 mt-1">
+              Showing {visibleMovies.length} / / {movies.length}
             </p>
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="text-sm text-zinc-300">
+            <span className="text-sm text-zinc-200">
               Rated: <span className="font-semibold">{ratedCount}</span>
             </span>
+
             <button
               onClick={clearRatings}
               className="rounded-md border border-zinc-700 px-3 py-2 text-sm hover:bg-zinc-900"
             >
               Clear
             </button>
+
             <a
               href="/"
               className="rounded-md bg-white text-black px-3 py-2 text-sm font-semibold hover:bg-zinc-200"
@@ -92,15 +148,16 @@ export default function RatePage() {
         </div>
       </div>
 
+      {/* Grid */}
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-          {movies.map((m) => {
+          {visibleMovies.map((m) => {
             const current = ratings[m.movieId] ?? 0;
 
             return (
               <div
                 key={m.movieId}
-                className="rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition"
+                className="rounded-xl overflow-hidden bg-zinc-900/60 border border-zinc-800 hover:border-zinc-600 transition"
               >
                 {m.poster_url ? (
                   <img
@@ -119,6 +176,7 @@ export default function RatePage() {
                   <div className="text-sm font-semibold leading-tight">
                     {m.title}
                   </div>
+
                   <div className="text-xs text-zinc-400 mt-1">
                     {m.year ? m.year : ""}
                     {m.director ? ` • ${m.director}` : ""}
@@ -156,44 +214,42 @@ export default function RatePage() {
             );
           })}
         </div>
-<div className="mt-10 rounded-xl border border-zinc-800 bg-zinc-950 p-5">
-  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-    <div>
-      <div className="text-lg font-semibold">Next step</div>
-      <div className="text-sm text-zinc-400">
-        Click generate to compute personalized recommendations (rated movies will be excluded).
-      </div>
-    </div>
 
-    <button
-      onClick={async () => {
-        const payload = Object.entries(ratings).map(([movieId, rating]) => ({
-          movieId: Number(movieId),
-          rating: Number(rating),
-        }));
+        {/* Actions */}
+        <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-950/70 p-5">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <div className="text-lg font-semibold">Next step</div>
+              <div className="text-sm text-zinc-400">
+                Option 1: load 10 more movies to rate. Option 2: generate
+                recommendations (rated movies will be excluded).
+              </div>
+            </div>
 
-        const res = await fetch("/api/recommend", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ratings: payload }),
-        });
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={() =>
+                  setVisibleCount((v) => Math.min(v + 10, movies.length))
+                }
+                disabled={!canLoadMore}
+                className={`rounded-md px-4 py-2 text-sm font-semibold ${
+                  canLoadMore
+                    ? "border border-zinc-700 hover:bg-zinc-900"
+                    : "border border-zinc-800 text-zinc-500 cursor-not-allowed"
+                }`}
+              >
+                Rate 10 more
+              </button>
 
-        const data = await res.json();
-
-        localStorage.setItem(
-          "personalized_recs_v1",
-          JSON.stringify(data.recs || [])
-        );
-
-        window.location.href = "/";
-      }}
-      className="rounded-md bg-white text-black px-4 py-2 text-sm font-semibold hover:bg-zinc-200"
-    >
-      Generate recommendations
-    </button>
-  </div>
-</div>
-        
+              <button
+                onClick={generate}
+                className="rounded-md bg-white text-black px-4 py-2 text-sm font-semibold hover:bg-zinc-200"
+              >
+                Generate recommendations
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

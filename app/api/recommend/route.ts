@@ -18,6 +18,19 @@ type TmdbPayload = {
 
 const TMDB_IMG = "https://image.tmdb.org/t/p";
 
+// ============================
+// NEW SPECS
+// ============================
+// We will STORE a large pool to keep 50 results even after filters + watched removals.
+const TOP_K_POOL = 2500;
+
+// TMDB enrichment is expensive (rate-limits). Enrich only the top chunk.
+// This is enough for smooth UI + filters most of the time.
+const ENRICH_LIMIT = 600;
+
+// limit concurrent TMDB fetches
+const TMDB_CONCURRENCY = 12;
+
 // simple in-memory cache so repeated calls are fast
 const tmdbCache = new Map<number, TmdbPayload>();
 
@@ -47,7 +60,9 @@ async function tmdbMovieFull(tmdbId: number): Promise<TmdbPayload | null> {
     year: d?.release_date ? Number(String(d.release_date).slice(0, 4)) : null,
     runtime: typeof d?.runtime === "number" ? d.runtime : null,
     original_language: d?.original_language ?? null,
-    genres: Array.isArray(d?.genres) ? d.genres.map((g: any) => g?.name).filter(Boolean) : null,
+    genres: Array.isArray(d?.genres)
+      ? d.genres.map((g: any) => g?.name).filter(Boolean)
+      : null,
     director,
     poster_url: d?.poster_path ? `${TMDB_IMG}/w342${d.poster_path}` : null,
     backdrop_url: d?.backdrop_path ? `${TMDB_IMG}/w780${d.backdrop_path}` : null,
@@ -60,7 +75,6 @@ async function tmdbMovieFull(tmdbId: number): Promise<TmdbPayload | null> {
 type RatingInput = { movieId: number; rating: number };
 
 let LOADED = false;
-
 let rows = 0;
 let cols = 0;
 
@@ -83,7 +97,11 @@ function loadModelOnce() {
 
   // item factors buffer
   const buf = fs.readFileSync(path.join(dataDir, "item_factors.f32"));
-  itemFactors = new Float32Array(buf.buffer, buf.byteOffset, buf.byteLength / 4);
+  itemFactors = new Float32Array(
+    buf.buffer,
+    buf.byteOffset,
+    buf.byteLength / 4
+  );
 
   // ids mapping
   movieIds = JSON.parse(
@@ -135,33 +153,117 @@ function buildUserVector(ratings: RatingInput[]) {
   return u;
 }
 
-function topNFromScores(scores: Float32Array, N: number, exclude: Set<number>) {
-  // Simple top-N (N=100) selection: keep a small sorted list
-  const top: { movieId: number; score: number }[] = [];
+// ============================
+// Efficient Top-K using a min-heap
+// ============================
+type TopItem = { movieId: number; score: number };
+
+class MinHeap {
+  private a: TopItem[] = [];
+  size() {
+    return this.a.length;
+  }
+  peek() {
+    return this.a[0];
+  }
+  push(x: TopItem) {
+    this.a.push(x);
+    this.bubbleUp(this.a.length - 1);
+  }
+  pop(): TopItem | undefined {
+    if (this.a.length === 0) return undefined;
+    const top = this.a[0];
+    const last = this.a.pop()!;
+    if (this.a.length > 0) {
+      this.a[0] = last;
+      this.bubbleDown(0);
+    }
+    return top;
+  }
+  toArrayDesc() {
+    // heap is min-heap; convert to array sorted descending
+    return this.a.slice().sort((x, y) => y.score - x.score);
+  }
+  private bubbleUp(i: number) {
+    while (i > 0) {
+      const p = (i - 1) >> 1;
+      if (this.a[p].score <= this.a[i].score) break;
+      [this.a[p], this.a[i]] = [this.a[i], this.a[p]];
+      i = p;
+    }
+  }
+  private bubbleDown(i: number) {
+    const n = this.a.length;
+    while (true) {
+      let m = i;
+      const l = i * 2 + 1;
+      const r = i * 2 + 2;
+      if (l < n && this.a[l].score < this.a[m].score) m = l;
+      if (r < n && this.a[r].score < this.a[m].score) m = r;
+      if (m === i) break;
+      [this.a[m], this.a[i]] = [this.a[i], this.a[m]];
+      i = m;
+    }
+  }
+}
+
+function topKFromScores(scores: Float32Array, K: number, exclude: Set<number>) {
+  const heap = new MinHeap();
 
   for (let i = 0; i < rows; i++) {
     const mid = movieIds[i];
     if (exclude.has(mid)) continue;
 
     const sc = scores[i];
-    if (top.length < N) {
-      top.push({ movieId: mid, score: sc });
-      top.sort((a, b) => b.score - a.score);
-    } else if (sc > top[top.length - 1].score) {
-      top[top.length - 1] = { movieId: mid, score: sc };
-      top.sort((a, b) => b.score - a.score);
+
+    if (heap.size() < K) {
+      heap.push({ movieId: mid, score: sc });
+    } else if (sc > heap.peek().score) {
+      heap.pop();
+      heap.push({ movieId: mid, score: sc });
     }
   }
 
-  return top;
+  return heap.toArrayDesc(); // sorted descending
+}
+
+// concurrency limiter for TMDB
+async function mapWithLimit<T, R>(
+  items: T[],
+  limit: number,
+  fn: (item: T, idx: number) => Promise<R>
+): Promise<R[]> {
+  const out: R[] = new Array(items.length);
+  let i = 0;
+
+  async function worker() {
+    while (true) {
+      const idx = i++;
+      if (idx >= items.length) return;
+      out[idx] = await fn(items[idx], idx);
+    }
+  }
+
+  const workers = Array.from(
+    { length: Math.min(limit, items.length) },
+    () => worker()
+  );
+
+  await Promise.all(workers);
+  return out;
 }
 
 export async function GET() {
-  // Backwards-compatible demo: return static recs file
+  // Homepage uses a static file, but return ONLY 50 for your new spec
   const p = path.join(process.cwd(), "data", "recs_top100.json");
   const raw = fs.readFileSync(p, "utf-8");
   const recs = JSON.parse(raw);
-  return NextResponse.json({ ok: true, mode: "static", count: recs.length, recs });
+  return NextResponse.json({
+    ok: true,
+    mode: "static",
+    count: Math.min(50, recs.length),
+    recs: recs.slice(0, 50),
+  });
 }
 
 export async function POST(req: Request) {
@@ -176,45 +278,73 @@ export async function POST(req: Request) {
     .map((r) => ({ movieId: Math.trunc(r.movieId), rating: Number(r.rating) }))
     .filter((r) => r.rating >= 1 && r.rating <= 5);
 
+  // Exclude the movies the user rated (so they never appear in recs)
   const exclude = new Set<number>(clean.map((r) => r.movieId));
 
-  // Build user vector
+  // Build user vector (this is using the trained model factors)
   const u = buildUserVector(clean);
 
   // Score all items
   const scores = new Float32Array(rows);
   for (let i = 0; i < rows; i++) scores[i] = dotItemWithUser(i, u);
 
-  // Top-100 excluding rated
-  const top = topNFromScores(scores, 100, exclude);
+  // Top-K pool (ranked by score)
+  const topPool = topKFromScores(scores, TOP_K_POOL, exclude);
 
-  // Return minimal UI fields (tmdbId + score); UI can render posters via TMDB image URLs later
- const recs = [];
-for (const t of top) {
-  const tmdbId = movieIdToTmdb[String(t.movieId)] ?? null;
-  const payload = tmdbId ? await tmdbMovieFull(Number(tmdbId)) : null;
+  // Enrich only the first ENRICH_LIMIT with TMDB metadata to avoid rate limits
+  const enrichCount = Math.min(ENRICH_LIMIT, topPool.length);
+  const head = topPool.slice(0, enrichCount);
+  const tail = topPool.slice(enrichCount);
 
-  recs.push({
-    movieId: t.movieId,
-    tmdbId,
-    score: Number(t.score.toFixed(6)),
-    title: payload?.title ?? `Movie #${t.movieId}`,
-    poster_url: payload?.poster_url ?? null,
-    backdrop_url: payload?.backdrop_url ?? null,
-    overview: payload?.overview ?? null,
-    year: payload?.year ?? null,
-    director: payload?.director ?? null,
-    runtime: payload?.runtime ?? null,
-    original_language: payload?.original_language ?? null,
-    genres: payload?.genres ?? null,
+  const headEnriched = await mapWithLimit(head, TMDB_CONCURRENCY, async (t, idx) => {
+    const tmdbId = movieIdToTmdb[String(t.movieId)] ?? null;
+    const payload = tmdbId ? await tmdbMovieFull(Number(tmdbId)) : null;
+
+    return {
+      rank: idx + 1,
+      movieId: t.movieId,
+      tmdbId,
+      score: Number(t.score.toFixed(6)),
+      title: payload?.title ?? null,
+      poster_url: payload?.poster_url ?? null,
+      backdrop_url: payload?.backdrop_url ?? null,
+      overview: payload?.overview ?? null,
+      year: payload?.year ?? null,
+      director: payload?.director ?? null,
+      runtime: payload?.runtime ?? null,
+      original_language: payload?.original_language ?? null,
+      genres: payload?.genres ?? null,
+    };
   });
-}
 
+  // Tail: return only minimal fields + rank; UI can lazily enrich later if needed
+  const tailMinimal = tail.map((t, i) => {
+    const tmdbId = movieIdToTmdb[String(t.movieId)] ?? null;
+    return {
+      rank: enrichCount + i + 1,
+      movieId: t.movieId,
+      tmdbId,
+      score: Number(t.score.toFixed(6)),
+      title: null,
+      poster_url: null,
+      backdrop_url: null,
+      overview: null,
+      year: null,
+      director: null,
+      runtime: null,
+      original_language: null,
+      genres: null,
+    };
+  });
+
+  const recs = [...headEnriched, ...tailMinimal];
 
   return NextResponse.json({
     ok: true,
     mode: "personalized",
     ratedCount: clean.length,
+    poolSize: recs.length,
+    enrichedCount: headEnriched.length,
     recs,
   });
 }

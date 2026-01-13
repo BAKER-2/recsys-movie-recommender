@@ -1,170 +1,173 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-type Rec = {
+type Movie = {
   movieId: number;
   title?: string | null;
   poster_url?: string | null;
-  year?: number | null;
-  director?: string | null;
-  score?: number;
 };
 
 export default function HomePage() {
-  const [recs, setRecs] = useState<Rec[]>([]);
-  const [loading, setLoading] = useState(true);
-
   const [hasPersonalized, setHasPersonalized] = useState(false);
-  const [mode, setMode] = useState<"landing" | "personalized">("landing");
+  const [popular, setPopular] = useState<Movie[]>([]);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const raw = localStorage.getItem("personalized_recs_v1");
     setHasPersonalized(Boolean(raw && raw.length > 5));
   }, []);
 
-  // Load landing (popular) recs by default
   useEffect(() => {
-    setLoading(true);
     fetch("/api/recommend")
-      .then((res) => res.json())
-      .then((data) => {
-        setRecs(data.recs);
-        setLoading(false);
-      });
+      .then((r) => r.json())
+      .then((d) => {
+        const recs = (d.recs || []) as Movie[];
+        setPopular(recs);
+      })
+      .catch(() => setPopular([]));
   }, []);
 
-  async function showPersonalized() {
-    const raw = localStorage.getItem("personalized_recs_v1");
-    if (!raw) return;
+  const posters = useMemo(() => {
+    // keep only valid TMDB poster URLs
+    return popular
+      .filter((m) => typeof m.poster_url === "string" && m.poster_url.includes("image.tmdb.org"))
+      .slice(0, 60); // limit for fast loads
+  }, [popular]);
 
-    try {
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed) && parsed.length > 0) {
-        setMode("personalized");
-        setRecs(parsed);
-        setLoading(false);
-      }
-    } catch {}
-  }
+  // Preload posters once so carousel doesn't show blanks
+  useEffect(() => {
+    if (posters.length === 0) return;
 
-  function clearPersonalized() {
-    localStorage.removeItem("personalized_recs_v1");
-    setHasPersonalized(false);
-    setMode("landing");
+    let done = 0;
+    let cancelled = false;
 
-    // reload landing recs
-    setLoading(true);
-    fetch("/api/recommend")
-      .then((res) => res.json())
-      .then((data) => {
-        setRecs(data.recs);
-        setLoading(false);
-      });
-  }
+    setReady(false);
+
+    posters.forEach((m) => {
+      const img = new Image();
+      img.onload = () => {
+        done += 1;
+        if (!cancelled && done >= Math.min(20, posters.length)) setReady(true);
+      };
+      img.onerror = () => {
+        done += 1;
+        if (!cancelled && done >= Math.min(20, posters.length)) setReady(true);
+      };
+      img.src = m.poster_url!;
+    });
+
+    // if network is slow, don't block forever
+    const t = setTimeout(() => {
+      if (!cancelled) setReady(true);
+    }, 1500);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(t);
+    };
+  }, [posters]);
+
+  // Seamless loop
+  const marqueeItems = useMemo(() => [...posters, ...posters], [posters]);
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-6xl px-6 py-10">
-        <div className="flex flex-col gap-3">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Movie Recommender
+    <main className="min-h-screen text-white">
+      <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col min-h-screen">
+        {/* Top section */}
+        <div className="pt-6">
+          <h1 className="text-5xl font-bold tracking-tight">
+            Personalized Movie Recommender
           </h1>
-          <p className="text-zinc-400 max-w-2xl">
-            Rate a few movies to generate personalized recommendations using
-            collaborative filtering (ALS matrix factorization on MovieLens 20M).
+
+          <p className="mt-6 text-lg text-zinc-300 max-w-2xl">
+            Rate a few movies to generate recommendations using collaborative
+            filtering (ALS matrix factorization trained on MovieLens 20M),
+            enriched with TMDB metadata.
           </p>
 
-          <div className="mt-4 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="/rate"
-              className="rounded-md bg-white text-black px-4 py-2 text-sm font-semibold hover:bg-zinc-200"
+              className="rounded-md bg-white text-black px-5 py-3 text-sm font-semibold hover:bg-zinc-200"
             >
-              Start rating (onboarding)
+              Start rating
             </a>
 
-            {hasPersonalized && mode !== "personalized" && (
-              <button
-                onClick={showPersonalized}
-                className="rounded-md border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-900"
+            {hasPersonalized && (
+              <a
+                href="/results"
+                className="rounded-md border border-zinc-700 px-5 py-3 text-sm hover:bg-zinc-900"
               >
-                View my personalized recommendations
-              </button>
-            )}
-
-            {mode === "personalized" && (
-              <button
-                onClick={() => {
-                  setMode("landing");
-                  setLoading(true);
-                  fetch("/api/recommend")
-                    .then((res) => res.json())
-                    .then((data) => {
-                      setRecs(data.recs);
-                      setLoading(false);
-                    });
-                }}
-                className="rounded-md border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-900"
-              >
-                Back to popular picks
-              </button>
+                View personalized
+              </a>
             )}
 
             {hasPersonalized && (
               <button
-                onClick={clearPersonalized}
-                className="rounded-md border border-zinc-700 px-4 py-2 text-sm hover:bg-zinc-900"
+                onClick={() => {
+                  localStorage.removeItem("personalized_recs_v1");
+                  window.location.reload();
+                }}
+                className="rounded-md border border-zinc-700 px-5 py-3 text-sm hover:bg-zinc-900"
               >
                 Clear personalization
               </button>
             )}
           </div>
-
-          <div className="mt-6 text-sm text-zinc-400">
-            {mode === "personalized"
-              ? "Showing: Personalized recommendations"
-              : "Showing: Popular picks (default)"}
-          </div>
         </div>
 
-        {loading ? (
-          <div className="min-h-[40vh] flex items-center justify-center">
-            <p className="text-lg">Loading…</p>
-          </div>
-        ) : (
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-            {recs.map((m) => (
-              <div
-                key={m.movieId}
-                className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-zinc-600 transition"
-              >
-                {m.poster_url ? (
-                  <img
-                    src={m.poster_url}
-                    alt={m.title ?? "Movie"}
-                    className="w-full h-auto"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="h-64 flex items-center justify-center bg-zinc-800">
-                    No image
-                  </div>
-                )}
+        {/* Bottom: carousel */}
+        <div className="mt-12 flex-1 flex items-end">
+          <div className="w-full">
+            <div className="text-sm text-zinc-300 mb-3">Popular picks</div>
 
-                <div className="p-2">
-                  <h2 className="text-sm font-semibold leading-tight">
-                    {m.title ?? `Movie #${m.movieId}`}
-                  </h2>
-                  {m.year && <p className="text-xs text-zinc-400">{m.year}</p>}
-                  {m.director && (
-                    <p className="text-xs text-zinc-500">Dir. {m.director}</p>
-                  )}
+            {!ready ? (
+              <div className="text-zinc-400">Loading posters…</div>
+            ) : (
+              <div className="relative w-full overflow-hidden">
+                <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-black via-transparent to-black" />
+
+                <div className="marquee-track gap-4 py-6">
+                  {marqueeItems.map((m, idx) => (
+                    <PosterCard key={`${m.movieId}-${idx}`} m={m} />
+                  ))}
                 </div>
               </div>
-            ))}
+            )}
+
+            <div className="mt-2 text-xs text-zinc-400">
+              (Auto-scrolling carousel of popular movies)
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </main>
+  );
+}
+
+function PosterCard({ m }: { m: Movie }) {
+  const [ok, setOk] = useState(true);
+
+  return (
+    <div className="shrink-0 w-[120px] sm:w-[140px] md:w-[170px]">
+      <div className="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900/60">
+        <div className="aspect-[2/3] w-full bg-zinc-800">
+          {ok && m.poster_url ? (
+            <img
+              src={m.poster_url}
+              alt={m.title ?? "Movie"}
+              className="w-full h-full object-cover"
+              loading="eager"
+              onError={() => setOk(false)}
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-zinc-400 text-xs">
+              No poster
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
