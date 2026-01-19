@@ -148,8 +148,8 @@ This design ensures:
 
 ## 👤 Authors
 
-- **Baker Huseyin**
-- **Islah Haoues**
+- **Baker Husein**
+- **Izla Haoues**
 
 ---
 
